@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swimming Pool Schedule</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .schedule {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 2px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+
+        .day-header {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .activity {
+            padding: 15px 10px;
+            color: white;
+            text-align: center;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .time {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        /* Activity Colors */
+        .public-swim { background-color: #00A0D1; }
+        .lane-swim { background-color: #97CF26; }
+        .aquacise { background-color: #FF6B98; }
+        .aqua-jog { background-color: #E6007E; }
+        .education { background-color: #40BFB0; }
+        .parent-baby { background-color: #E6007E; }
+        .kids-swimming { background-color: #FF6600; }
+
+        @media (max-width: 768px) {
+            .schedule {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .schedule {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule">
+        <!-- Headers -->
+        <div class="day-header">Monday</div>
+        <div class="day-header">Tuesday</div>
+        <div class="day-header">Wednesday</div>
+        <div class="day-header">Thursday</div>
+        <div class="day-header">Friday</div>
+        <div class="day-header">Saturday</div>
+        <div class="day-header">Sunday</div>
+
+        <!-- Monday -->
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">06:30-10:30</div>
+        </div>
+
+        <!-- Tuesday -->
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">06:30-09:00</div>
+        </div>
+
+        <!-- Wednesday -->
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">06:30-09:00</div>
+        </div>
+
+        <!-- Thursday -->
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">06:30-11:15</div>
+        </div>
+
+        <!-- Friday -->
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">06:30-09:00</div>
+        </div>
+
+        <!-- Saturday -->
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">08:00-09:00</div>
+        </div>
+
+        <!-- Sunday -->
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">08:00-09:00</div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="activity aquacise">
+            <div>Aquacise</div>
+            <div class="time">10:30-11:15</div>
+        </div>
+
+        <div class="activity aqua-jog">
+            <div>Aqua Jog</div>
+            <div class="time">09:15-10:00</div>
+        </div>
+
+        <div class="activity education">
+            <div>Education Swimming Lessons</div>
+            <div class="time">09:00-12:00</div>
+        </div>
+
+        <div class="activity aquacise">
+            <div>Aquacise</div>
+            <div class="time">11:15-12:00</div>
+        </div>
+
+        <div class="activity education">
+            <div>Education Swimming Lessons</div>
+            <div class="time">09:00-12:00</div>
+        </div>
+
+        <div class="activity kids-swimming">
+            <div>Oldham Active Kids Swimming Lessons</div>
+            <div class="time">09:00-13:00</div>
+        </div>
+
+        <div class="activity public-swim">
+            <div>Public Swim</div>
+            <div class="time">09:00-11:00</div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">11:30-13:00</div>
+        </div>
+
+        <div class="activity parent-baby">
+            <div>Parent & Baby Class</div>
+            <div class="time">09:30-10:15</div>
+        </div>
+
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">12:00-13:00</div>
+        </div>
+
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">12:00-13:00</div>
+        </div>
+
+        <div class="activity lane-swim">
+            <div>Lane Swim</div>
+            <div class="time">12:00-13:00</div>
+        </div>
+
+        <div class="activity parent-baby">
+            <div>Parent and Baby</div>
+            <div class="time">12:00-12:45</div>
+        </div>
+
+        <div class="activity aquacise">
+            <div>Aquacise</div>
+            <div class="time">11:00-11:45</div>
+        </div>
+    </div>
+</body>
+</html>

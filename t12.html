@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: cyan;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: magenta;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: rgb(100, 149, 237);
+            flex: 1;
+            padding: 20px;
+        }
+
+        article {
+            background-color: pink;
+            margin-bottom: 20px;
+            padding: 40px;
+        }
+
+        article:last-child {
+            margin-bottom: 0;
+        }
+
+        aside {
+            background-color: pink;
+            width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgb(230, 230, 250);
+            padding: 20px;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>nav</nav>
+    </header>
+
+    <main>
+        <section>
+            <article>article</article>
+            <article>article</article>
+            <article>article</article>
+        </section>
+        <aside>aside</aside>
+    </main>
+
+    <footer>footer</footer>
+</body>
+</html>

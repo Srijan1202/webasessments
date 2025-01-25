@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            font-weight: bold;
+            background-color: #ddd;
+        }
+        .course-number {
+            color: #003366;
+            font-weight: bold;
+        }
+        .course-title a {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .course-title a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Course Number</th>
+            <th>Course Title</th>
+            <th>Semester Taken</th>
+        </tr>
+        <tr class="header">
+            <td colspan="3">For Credit</td>
+        </tr>
+        <tr>
+            <td class="course-number">6.813</td>
+            <td class="course-title"><a href="#">User Interface Design</a></td>
+            <td><a href="#">Spring 2014</a></td>
+        </tr>
+        <tr>
+            <td class="course-number">6.034</td>
+            <td>Artificial Intelligence</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr>
+            <td class="course-number">6.006</td>
+            <td>Introduction to Algorithms</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr class="header">
+            <td colspan="3">Listener</td>
+        </tr>
+        <tr>
+            <td class="course-number">6.867</td>
+            <td>Machine Learning</td>
+            <td>Fall 2013</td>
+        </tr>
+        <tr>
+            <td class="course-number">6.830</td>
+            <td>Database Systems</td>
+            <td>Fall 2012</td>
+        </tr>
+    </table>
+
+</body>
+</html>
